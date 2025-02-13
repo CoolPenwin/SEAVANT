@@ -4,9 +4,7 @@ export const Navbar = () => {
 	return (
 		<nav className="navbar navbar-expand-lg navbar-dark bg-primary">
 			<div className="container">
-				<Link to="/">
-					<span className="navbar-brand">EcoSubmarine</span>
-				</Link>
+				<Link to="/" className="navbar-brand">EcoSubmarine</Link>
 				<button 
 					className="navbar-toggler" 
 					type="button" 
@@ -18,16 +16,16 @@ export const Navbar = () => {
 				<div className="collapse navbar-collapse" id="navbarNav">
 					<ul className="navbar-nav ms-auto">
 						<li className="nav-item">
-							<a className="nav-link" href="#caracteristicas">Características</a>
+							<Link to="/caracteristicas" className="nav-link">Características</Link>
 						</li>
 						<li className="nav-item">
-							<a className="nav-link" href="#impacto">Impacto</a>
+							<Link to="/impacto" className="nav-link">Impacto</Link>
 						</li>
 						<li className="nav-item">
-							<a className="nav-link" href="#contacto">Contacto</a>
+							<Link to="/contacto" className="nav-link">Contacto</Link>
 						</li>
 						<li className="nav-item">
-							<button className="btn btn-light ms-2">Invertir</button>
+							<Link to="/invertir" className="btn btn-light ms-2">Invertir</Link>
 						</li>
 					</ul>
 				</div>
