@@ -3,73 +3,137 @@ import React from "react";
 export const Caracteristicas = () => {
   return (
     <div className="container py-5">
-      <h1 className="text-center mb-5">Características Técnicas</h1>
+      <h1 className="text-center mb-5">Arquitectura del Sistema SEAVANT</h1>
       
-      {/* Especificaciones Técnicas */}
+      {/* Arquitectura del Sistema */}
       <div className="row mb-5">
         <div className="col-md-6">
-          <h3>Especificaciones del Dron</h3>
-          <ul className="list-group">
-            <li className="list-group-item">
-              <strong>Dimensiones:</strong> 1.2m x 0.8m x 0.5m
-            </li>
-            <li className="list-group-item">
-              <strong>Peso:</strong> 45 kg
-            </li>
-            <li className="list-group-item">
-              <strong>Profundidad máxima:</strong> 100 metros
-            </li>
-            <li className="list-group-item">
-              <strong>Autonomía:</strong> 8 horas
-            </li>
-            <li className="list-group-item">
-              <strong>Capacidad de recolección:</strong> 20kg de plástico
-            </li>
-          </ul>
+          <h3>Componentes Principales</h3>
+          <div className="accordion" id="architectureAccordion">
+            <div className="accordion-item">
+              <h2 className="accordion-header">
+                <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#urs">
+                  Unidad Robótica Submarina (URS)
+                </button>
+              </h2>
+              <div id="urs" className="accordion-collapse collapse show" data-bs-parent="#architectureAccordion">
+                <div className="accordion-body">
+                  <ul className="list-unstyled">
+                    <li><i className="fas fa-check text-success me-2"></i>Drones submarinos autónomos</li>
+                    <li><i className="fas fa-check text-success me-2"></i>Sensores ambientales (temperatura, pH, turbidez)</li>
+                    <li><i className="fas fa-check text-success me-2"></i>Propulsión biomimética optimizada</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="accordion-item">
+              <h2 className="accordion-header">
+                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#spaa">
+                  Sistema de Percepción y Análisis Ambiental (SPAA)
+                </button>
+              </h2>
+              <div id="spaa" className="accordion-collapse collapse" data-bs-parent="#architectureAccordion">
+                <div className="accordion-body">
+                  <ul className="list-unstyled">
+                    <li><i className="fas fa-check text-success me-2"></i>Sensores espectrales y LIDAR submarino</li>
+                    <li><i className="fas fa-check text-success me-2"></i>Cámaras de visión computarizada con CNN</li>
+                    <li><i className="fas fa-check text-success me-2"></i>Fusión de datos IoT en tiempo real</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="col-md-6">
-          <img src="https://via.placeholder.com/500x300" alt="Especificaciones técnicas" className="img-fluid rounded shadow" />
+          <img src="https://via.placeholder.com/500x300" alt="Arquitectura SEAVANT" className="img-fluid rounded shadow" />
         </div>
       </div>
 
-      {/* Sistema de Filtración */}
+      {/* Tecnologías Clave */}
       <div className="row mb-5">
-        <div className="col-md-6 order-md-2">
-          <h3>Sistema de Filtración Avanzado</h3>
-          <p>Nuestro sistema de filtración utiliza tecnología de última generación para:</p>
-          <ul className="list-group">
-            <li className="list-group-item">Separación de microplásticos</li>
-            <li className="list-group-item">Filtración selectiva por tamaño</li>
-            <li className="list-group-item">Preservación de la vida marina</li>
-            <li className="list-group-item">Almacenamiento compacto de residuos</li>
-          </ul>
-        </div>
-        <div className="col-md-6 order-md-1">
-          <img src="https://via.placeholder.com/500x300" alt="Sistema de filtración" className="img-fluid rounded shadow" />
-        </div>
-      </div>
-
-      {/* Sistema de Navegación */}
-      <div className="row">
-        <div className="col-md-6">
-          <h3>Navegación Inteligente</h3>
-          <div className="card">
+        <h3 className="text-center mb-4">Tecnologías Clave</h3>
+        <div className="col-md-3">
+          <div className="card h-100">
             <div className="card-body">
-              <h5 className="card-title">Tecnología de IA</h5>
-              <p className="card-text">
-                Sistema de navegación autónomo que utiliza:
-              </p>
-              <ul>
-                <li>Sensores de proximidad avanzados</li>
-                <li>Mapeo 3D del entorno marino</li>
-                <li>Algoritmos de evasión de obstáculos</li>
-                <li>Planificación de rutas optimizada</li>
+              <i className="fas fa-brain fa-3x mb-3 text-primary"></i>
+              <h4 className="card-title h5">IA y Machine Learning</h4>
+              <ul className="list-unstyled">
+                <li>Red neuronal profunda (CNN)</li>
+                <li>Visión computacional submarina</li>
+                <li>Modelos predictivos satelitales</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-3">
+          <div className="card h-100">
+            <div className="card-body">
+              <i className="fas fa-microchip fa-3x mb-3 text-primary"></i>
+              <h4 className="card-title h5">Hardware</h4>
+              <ul className="list-unstyled">
+                <li>LIDAR submarino</li>
+                <li>Cámaras espectrales</li>
+                <li>Sensores ambientales</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-3">
+          <div className="card h-100">
+            <div className="card-body">
+              <i className="fas fa-code fa-3x mb-3 text-primary"></i>
+              <h4 className="card-title h5">Software</h4>
+              <ul className="list-unstyled">
+                <li>Algoritmos A* y Dijkstra</li>
+                <li>Deep Reinforcement Learning</li>
+                <li>Gemelos digitales</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-3">
+          <div className="card h-100">
+            <div className="card-body">
+              <i className="fas fa-shield-alt fa-3x mb-3 text-primary"></i>
+              <h4 className="card-title h5">Seguridad</h4>
+              <ul className="list-unstyled">
+                <li>Autenticación multifactor</li>
+                <li>Encriptación de datos</li>
+                <li>Firewalls IoT submarino</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Materiales y Fabricación */}
+      <div className="row">
+        <h3 className="text-center mb-4">Materiales y Fabricación</h3>
+        <div className="col-md-6">
+          <div className="card mb-4">
+            <div className="card-body">
+              <h4 className="card-title">Materiales Avanzados</h4>
+              <ul className="list-group list-group-flush">
+                <li className="list-group-item">Nylon reforzado con fibra de carbono</li>
+                <li className="list-group-item">Materiales biodegradables</li>
+                <li className="list-group-item">Recubrimientos anti-corrosión</li>
+                <li className="list-group-item">Nanotecnología antifouling</li>
               </ul>
             </div>
           </div>
         </div>
         <div className="col-md-6">
-          <img src="https://via.placeholder.com/500x300" alt="Sistema de navegación" className="img-fluid rounded shadow" />
+          <div className="card">
+            <div className="card-body">
+              <h4 className="card-title">Fabricación Aditiva</h4>
+              <ul className="list-group list-group-flush">
+                <li className="list-group-item">Optimización topológica CAD</li>
+                <li className="list-group-item">Análisis de Elementos Finitos</li>
+                <li className="list-group-item">Materiales autorreparables</li>
+                <li className="list-group-item">Impresión 3D submarina</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>

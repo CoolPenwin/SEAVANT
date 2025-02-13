@@ -3,13 +3,13 @@ export const Footer = () => (
     <div className="container">
       <div className="row">
         <div className="col-md-4">
-          <h5>EcoSubmarine</h5>
-          <p className="small">Innovando para un océano más limpio y saludable</p>
+          <h5>SEAVANT</h5>
+          <p className="small">Un sistema holístico de restauración marina para un futuro sostenible</p>
         </div>
         <div className="col-md-4">
           <h5>Contacto</h5>
           <p className="small">
-            <i className="fas fa-envelope me-2"></i>info@ecosubmarine.com<br />
+            <i className="fas fa-envelope me-2"></i>info@seavant.com<br />
             <i className="fas fa-phone me-2"></i>+34 900 000 000
           </p>
         </div>
@@ -24,7 +24,7 @@ export const Footer = () => (
       </div>
       <hr className="mt-4" />
       <div className="text-center">
-        <p className="small mb-0">© 2024 EcoSubmarine. Todos los derechos reservados.</p>
+        <p className="small mb-0">© 2024 SEAVANT. Desarrollado por Lorena C.G. Todos los derechos reservados.</p>
       </div>
     </div>
   </footer>
